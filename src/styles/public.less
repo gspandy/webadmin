@@ -1,0 +1,32 @@
+
+@import '~less_defined';
+.hy-active:hover{
+    background: #dddddd;
+    cursor: pointer;
+}
+.hy-active:active{
+    background: #ccc;
+}
+
+/*
+	超出省略号
+	hy-line-1:超过1行就显示省略号
+	hy-line-n:超过n行就显示省略号
+*/
+.hy-line-1,
+.hy-line-2{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+.hy-line-1{
+	-webkit-line-clamp: 1;
+}
+.hy-line-2{    
+	-webkit-line-clamp: 2;
+}
+.pd0{
+    padding: 0px;
+    margin: 0px;
+}
